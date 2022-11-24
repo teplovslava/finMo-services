@@ -50,5 +50,18 @@ document.addEventListener('DOMContentLoaded',function(){
       })}
           
       )
+
+      
+      const menuBurger = document.querySelector('.burger')
+      const burgerBtn = document.querySelector('.open-right__menu')
+
+      burgerBtn.addEventListener('click',()=>{
+        burgerBtn.classList.toggle('openedBurger')
+        menuBurger.classList.toggle('active-burger')
+        menuItem.forEach(item=>{
+          item.classList.remove('active')
+       
+      })
+      })
       
 })
